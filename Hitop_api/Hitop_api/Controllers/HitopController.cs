@@ -59,5 +59,30 @@ namespace hitop.Controllers
             return cachedResult;
         }
 
+
+        [HttpGet]
+        public async Task<IEnumerable<productModel>> GetProductDatabase(string search = null)
+        {
+            string cacheKey = $"product_search_{search ?? "all"}";
+
+            if (!_cache.TryGetValue(cacheKey, out IEnumerable<productModel> cachedResult))
+            {
+                cachedResult = await sv.GetProductDatabase(search);
+
+                if (cachedResult == null && !string.IsNullOrEmpty(sv.getErrorMessage()))
+                {
+                    throw new ApplicationException(sv.getErrorMessage());
+                }
+
+                // Cache for result within 10 min
+                var cacheOptions = new MemoryCacheEntryOptions()
+                    .SetSlidingExpiration(TimeSpan.FromMinutes(10));
+
+                _cache.Set(cacheKey, cachedResult, cacheOptions);
+            }
+
+            return cachedResult;
+        }
+
     }
 }

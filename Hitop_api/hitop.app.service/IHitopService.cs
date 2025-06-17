@@ -8,5 +8,6 @@ namespace hitop.app.service
 
         Task<string> Test();
         Task<IEnumerable<productModel>> GetProduct(string search = null);
+        Task<IEnumerable<productModel>> GetProductDatabase(string search = null);
     }
 }
