@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hitop_api", "Hitop_api\Hitop_api.csproj", "{A8F16072-E9F7-4030-AAED-D247678D2A27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{34311D52-7ED4-45F8-B3F6-202C8C4B5422}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "model", "model", "{342F8EEE-63FA-4454-961F-0E41EE73F11B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hitop.app.service", "hitop.app.service\hitop.app.service.csproj", "{315A9B4F-65DC-4087-B789-9494CDF30797}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hitop.model", "hitop.model\hitop.model.csproj", "{5B6B186F-046F-4365-A707-4F31C34F3EA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app.config", "app.config\app.config.csproj", "{5E304D7D-7745-4ECF-8173-616772B56E05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8F16072-E9F7-4030-AAED-D247678D2A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8F16072-E9F7-4030-AAED-D247678D2A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8F16072-E9F7-4030-AAED-D247678D2A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8F16072-E9F7-4030-AAED-D247678D2A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{315A9B4F-65DC-4087-B789-9494CDF30797}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{315A9B4F-65DC-4087-B789-9494CDF30797}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{315A9B4F-65DC-4087-B789-9494CDF30797}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{315A9B4F-65DC-4087-B789-9494CDF30797}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B6B186F-046F-4365-A707-4F31C34F3EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B6B186F-046F-4365-A707-4F31C34F3EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B6B186F-046F-4365-A707-4F31C34F3EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B6B186F-046F-4365-A707-4F31C34F3EA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E304D7D-7745-4ECF-8173-616772B56E05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E304D7D-7745-4ECF-8173-616772B56E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E304D7D-7745-4ECF-8173-616772B56E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E304D7D-7745-4ECF-8173-616772B56E05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{315A9B4F-65DC-4087-B789-9494CDF30797} = {34311D52-7ED4-45F8-B3F6-202C8C4B5422}
+		{5B6B186F-046F-4365-A707-4F31C34F3EA4} = {342F8EEE-63FA-4454-961F-0E41EE73F11B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDAC8934-359A-45D7-920C-AAAB3460C9C7}
+	EndGlobalSection
+EndGlobal
