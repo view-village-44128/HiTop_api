@@ -6,7 +6,7 @@ namespace hitop.app.service
     {
         string getErrorMessage();
 
-        Task<String> Test();
-        Task<IEnumerable<String>> GetProduct(string search = null);
+        Task<string> Test();
+        Task<IEnumerable<productModel>> GetProduct(string search = null);
     }
 }

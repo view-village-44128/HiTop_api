@@ -33,16 +33,16 @@ namespace hitop.app.service
         }
 
 
-        public async Task<String> Test()
+        public async Task<string> Test()
         {
 
             return "aaaaa";
         }
 
-        public async Task<IEnumerable<String>> GetProduct(string search = null)
+        public async Task<IEnumerable<productModel>> GetProduct(string search = null)
         {
         
-            IEnumerable<String> iens = null;
+            IEnumerable<productModel> iens = null;
       
             return iens;
         }
